@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lbs">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:label="@string/app_name">
+
+        <!-- Key 最好自己申请下 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XzHodgbv5VHhw9tEUsG2IDlk"></meta-data>
+
+        <!--貌似不加service，也可以定位，暂时先去掉 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":lbs"
+            />
+    </application>
+
+</manifest>

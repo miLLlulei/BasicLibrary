@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        /**
+         * 图片TinyPIC压缩,图片大小扫描 @lulie-ms
+         */
+//        classpath 'com.mogujie.gradle:tinyPicPlugin:1.1.4'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    /**
+     * 最小版本限定到19， 游戏so暂不支持
+     */
+    minSdkVersion = 19
+    targetSdkVersion = 23
+    compileSdkVersion = 23
+    buildToolsVersion = "26.0.2"
+    supportVersion = "24.0.0"
+}

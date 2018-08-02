@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyOkhttp</string>
+
+    <string name="Net_Error">联网失败，请稍后再试</string>
+</resources>

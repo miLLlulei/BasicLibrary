@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lbs</string>
+
+    <string name="permission_lbs_no">没有定位权限，请在系统设置中开启定位权限</string>
+</resources>
