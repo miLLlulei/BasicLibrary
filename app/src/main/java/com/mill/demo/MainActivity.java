@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.common.anim.ScoreScanView;
 import com.http.BaseRequestCall;
 import com.mill.utils.ContextUtils;
 import com.mill.utils.LogUtils;
@@ -32,5 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("HttpClientImp", "onResponse " + response);
             }
         });
+
+
+        ((ScoreScanView) findViewById(R.id.scan_view)).startAnim(80);
     }
 }
